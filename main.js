@@ -69,3 +69,53 @@ function atualizaEstatistica (operacao, peca) {
         } 
     });
 }
+
+const imagemRobo = document.getElementById('robotron');
+const corRobo = document.getElementById('cor-robotron');
+
+corRobo.addEventListener('change', () => {
+    const corSelecionada = corRobo.value;
+    const areaRobo = document.getElementById('area-robotron');
+    switch(corSelecionada) {
+        case 'azul':
+            console.log('azul');
+            areaRobo.innerHTML = "";
+            areaRobo.innerHTML = `<img class="robo" src="img/azul/robo-azul.png" alt="Robotron" id="robotron">
+            <figcaption class="titulo">ROBOTRON <br>2000</figcaption>`;          
+            break;
+        case 'amarelo':
+            console.log('amarelo');
+            areaRobo.innerHTML = "";
+            areaRobo.innerHTML = `<img class="robo" src="img/amarelo/robo-amarelo.png" alt="Robotron" id="robotron">
+            <figcaption class="titulo">ROBOTRON <br>2000</figcaption>`;
+            break;
+        case 'vermelho':
+            console.log('vermelho');
+            areaRobo.innerHTML = "";
+            areaRobo.innerHTML = `<img class="robo" src="img/vermelho/robo-vermelho.png" alt="Robotron" id="robotron">
+            <figcaption class="titulo">ROBOTRON <br>2000</figcaption>`;
+            break;
+        case 'rosa':
+            console.log('rosa');
+            areaRobo.innerHTML = "";
+            areaRobo.innerHTML = `<img class="robo" src="img/rosa/robo-rosa.png" alt="Robotron" id="robotron">
+            <figcaption class="titulo">ROBOTRON <br>2000</figcaption>`;
+            break;
+        case 'preto':
+            console.log('preto');
+            areaRobo.innerHTML = "";
+            areaRobo.innerHTML = `<img class="robo" src="img/preto/robo-preto.png" alt="Robotron" id="robotron">
+            <figcaption class="titulo">ROBOTRON <br>2000</figcaption>`;
+            break;
+        case 'branco':
+            console.log('branco');
+            areaRobo.innerHTML = "";
+            areaRobo.innerHTML = `<img class="robo" src="img/branco/robo-branco.png" alt="Robotron" id="robotron">
+            <figcaption class="titulo">ROBOTRON <br>2000</figcaption>`;
+            break;
+        default:
+            console.log('preto');
+            imagemRobo.innerHTML = `<img class="robo" src="img/preto/robo-preto.png" alt="Robotron" id="robotron">
+            <figcaption class="titulo">ROBOTRON <br>2000</figcaption>`;
+    }
+});
