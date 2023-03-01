@@ -14,8 +14,8 @@
 </head>
 <body>
     <main>
-        <section class="robotron">
-            <img class="robo" src="img/robotron.png" alt="Robotron" id="robotron">
+        <section id="area-robotron" class="robotron">
+            <img class="robo" src="img/preto/robo-preto.png" alt="Robotron" id="robotron">
             <figcaption class="titulo">ROBOTRON <br>2000</figcaption>
         </section>
 
@@ -94,7 +94,19 @@
                         </div>
                     </div>
                 </div>
-                <input type="submit" value="Iniciar produção" class="producao" id="producao">
+                <div class="caixa-titulo">
+                    <label class="titulo-cor">Escolha a cor do seu Robotron!</label>
+                    <select id="cor-robotron">
+                        <option value="preto">Preto</option>
+                        <option value="amarelo">Amarelo</option>
+                        <option value="rosa">Rosa</option>
+                        <option value="azul">Azul</option>
+                        <option value="vermelho">Vermelho</option>
+                        <option value="branco">Branco</option>
+                    </select>
+                    <input type="submit" value="Iniciar produção" class="producao" id="producao">
+                </div>
+                
             </form>
         </section>
     </main>
