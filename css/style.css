@@ -58,6 +58,7 @@ main {
     color: rgba(255,255,255,0.8)
 }
 
+
 .box {
     background: rgba(0,0,0,0.6);
     clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
@@ -131,9 +132,28 @@ main {
     border-color: var(--main-cinza);
 }
 
-.producao {
+
+/****************************** Caixa Produção *****/
+.producao:hover {
+    background: var(--main-preto);
+    color: var(--main-branco)
+}
+
+
+.caixa-titulo {
     margin-top: 1em;
-    font-size: 2em;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 0.2em 1.1em;
+    float: left;
+    border: 3px solid var(--main-branco);
+    background: var(--main-branco);
+    clip-path: polygon(100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 0);
+    cursor: pointer;
+}
+
+.producao {
+    font-size: 0.9em;
     text-transform: uppercase;
     padding: 0.2em 1em;
     float: right;
@@ -141,13 +161,18 @@ main {
     background: var(--main-branco);
     clip-path: polygon(100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 0);
     cursor: pointer;
+    right: -1.5em;
+    position: relative;
 }
 
-.producao:hover {
-    background: var(--main-preto);
-    color: var(--main-branco)
+#cor-robotron {
+    padding: 0.3em;
+    font-family: 'Teko', sans-serif;
+    position: relative;
+    right: 12em;
+    top: 2.5em;
+    text-transform: uppercase;
 }
-
 
 
 /****************************** Estatísticas *****/
